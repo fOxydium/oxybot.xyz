@@ -7,6 +7,7 @@ if (localStorage.getItem('theme') === 'light') {
     document.querySelector('header').classList.add('light');
     document.querySelector('.content').classList.add('light');
     document.querySelector('footer').classList.add('light');
+    document.querySelector('.refImg').classList.add('light');
 
     toggle.checked = true;
 } else {
@@ -14,6 +15,8 @@ if (localStorage.getItem('theme') === 'light') {
     document.querySelector('header').classList.remove('light');
     document.querySelector('.content').classList.remove('light');
     document.querySelector('footer').classList.remove('light');
+    document.querySelector('.refImg').classList.remove('light');
+
 
     toggle.checked = false;
 }
@@ -25,6 +28,8 @@ toggle.addEventListener('change', () => {
         document.querySelector('header').classList.add('light');
         document.querySelector('.content').classList.add('light');
         document.querySelector('footer').classList.add('light');
+        document.querySelector('.refImg').classList.add('light');
+
 
         localStorage.setItem('theme', 'light');
     } else {
@@ -32,6 +37,8 @@ toggle.addEventListener('change', () => {
         document.querySelector('header').classList.remove('light');
         document.querySelector('.content').classList.remove('light');
         document.querySelector('footer').classList.remove('light');
+        document.querySelector('.refImg').classList.remove('light');
+
 
         localStorage.setItem('theme', 'dark');
     }
